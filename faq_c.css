@@ -60,3 +60,19 @@ h2:hover, h3:hover {
     color: yellow;
     background-color: violet;
 }
+
+.main {
+    margin-left: 25%;
+    margin-right: 20%;
+    font-size: 2em;
+}
+
+.main {
+    color:rgb(6, 95, 95);
+    font-size: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main p{
+    color: teal;
+}

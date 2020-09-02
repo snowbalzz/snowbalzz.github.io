@@ -38,3 +38,6 @@ table, tr, td{
 #td1:hover {
     background-color:violet;  
 }
+.main {
+    margin-left: 20%;
+}
