@@ -16,6 +16,7 @@
 .sidebar a{
     color: rgb(0, 199, 199);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
 
 }
 
@@ -37,10 +38,6 @@ table{
 
 #td1:hover {
     background-color:violet;  
-}
-h1{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(179, 90, 63);
 }
 ol {
     color: rgb(179, 90, 63);
