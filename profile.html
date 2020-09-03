@@ -14,22 +14,146 @@
                     <a href = "dashboard.html" style="text-decoration: none;" ><h1>DASHBOARD</h1></a>
                     <a href = "faq.html" style="text-decoration: none;" ><h1>FAQ</h1></a>
             </header>
-        </div>        
-        <div class="main">
-            <h1>PROFILE</h1>
-                    <tr ><h1 align="center">Name: Daniils Aleksašins</h1></tr>
-                    <tr ><h1 align="center">Country: Latvia </h1></tr>
-                    <tr ><h1 align="center">Age: 19</h1></tr>
-                    <h1 align="center">My hobbies are:</h1>
-                    <h1 align="center">Drawing</h1>
-                    <h1 align="center">Playing tennis</h1>
-                    <h1 align="center">Coding *sometimes*</h1>    
-            <h1 align='center'>MY ARTWORKS</h1>
-            <table align="center"> 
-                <td><img src="pictures/ahsoka.PNG" alt="" height="500" width="300"></td>
-                <td><img src="pictures/darth.PNG" alt="" height="500" width="300"></td>
-                <td><img src="pictures/general.PNG" alt="" height="500" width="300"></td>
-            </table>
+    </div>        
+    <div class="main">
+        <h1>Profile</h1>
+            <Table class="profilet"> 
+            <tr>
+                <td>
+                    <h2>Who am I?</h2>
+                </td>
+                <td>
+                    <h2>What I like?</h2>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <h2></h2>
+                </td>
+            </tr>
+            <tr>
+             <td>
+                <div>
+                    <p>My name is Daniils Aleksašins, and I come from Latvia.</p>
+                    <p>I was born on April 6. 2001. So that make me 19 years old at the moment.</p>
+                    <p>I would describe myself as .....</p>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <p>I like to draw alot. Whenever I have free or spare time I try to draw as much as I can.</p>
+                    <p>I also love to play tennis. Been playing it for almost 13 yers. </p>
+                    <p>But because of on my leg curently I am unable to play tennis or any kind of sports.</p>
+                </div>
+            </td>
+            
+            </tr>
+            <tr>
+            <td>
+                <div>
+                    <p></p>
+                </div>
+            </td>
+            </tr>
+            </Table>
+            <div class="slideshow">
+            <div class="container">
+            <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+                <img src="" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+                <img src="" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+                <img src="" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+                <img src="" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+                <img src="" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+                <img src="" style="width:100%">
+            </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+        
+            
+            <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column"> 
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div> 
+            <div class="column">
+                <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+            </div>
         </div>
+        </div>
+        
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
     </body>
-</html>s
+</html>
