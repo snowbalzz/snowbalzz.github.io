@@ -39,14 +39,14 @@ img{
 
 body {
     background-image: url(pictures/forest.jpeg);
+    background-attachment: fixed;
 }
 
 .main {
     text-shadow: 0 0 16px rgb(137, 201, 201);
     margin-left: 20%;
     margin-right: 10%;
-    margin-top: -27px;
-    font-size: 1em;
+    margin-top: -26px;
     background-color: rgba(122, 218, 202, 0.85);
     color:rgb(6, 95, 95);
     font-size: 1.2em;
@@ -82,10 +82,11 @@ body {
 .main td {
     vertical-align: text-top;
 }
-.main h1, p {
-    margin-left:5%;
-}
 
+.text{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 
 * {
