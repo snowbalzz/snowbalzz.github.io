@@ -10,8 +10,7 @@ img{
     left:143px;
     background-color:teal;
     height: 100%;
-    width: 150px; 
-    text-align: center;
+    width: 150px;
 }
 
 .sidebar hr{
@@ -187,4 +186,35 @@ body {
 
 }
 
+@media (max-width: 1400px) {
+.sidebar{
+  width: 400px;
+  position:relative;
+}
+.sidebar h1{
+  font-size: 2em;
 
+}
+.sidebar td{
+  width: auto;
+  height: auto;
+}
+.sidebar table{
+  width: 100px;
+}
+
+body {
+  background-image: url(pictures/forest.jpeg);
+  background-attachment: fixed;
+}
+.main {
+  font-size: 0.9em;
+
+}
+}
+
+@media (max-width: 578px) {
+  .main{
+  font-size: 0.1em;
+  }
+}
