@@ -7,10 +7,10 @@ img{
     position: fixed;
     top: 0;
     bottom: 0;
-    left:143px;
+    left: 5.2%;
     background-color: #27273A;
     height: 100%;
-    width: 150px;
+    width: 10.3%;
 }
 
 .sidebar hr{
@@ -27,7 +27,7 @@ img{
 .sidebar a{
     color: #F8C275;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 0.5em;
+    font-size: 50%;
 
 }
 
@@ -39,13 +39,14 @@ img{
 body {
     background-image: url(pictures/forest.jpeg);
     background-attachment: fixed;
+    margin-top: 0;
 }
 
 .main {
     text-shadow: 0 0 16px rgb(137, 201, 201);
-    margin-left: 20%;
-    margin-right: 10%;
-    margin-top: -26px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0px;
     background-color: rgba(122, 218, 202, 0.90);
     color:#27273A;
     font-size: 1.2em;
@@ -67,7 +68,13 @@ body {
     width: 300px;
   
 }
+.main h1{
+  margin-top: 0;
+}
 
+.main a:hover {
+  color:#F8C275;
+}
 
 .main {
     animation-name: fade;
@@ -187,32 +194,57 @@ body {
 
 }
 
+
+
+
+
+
+
 @media (max-width: 1400px) {
 .sidebar{
-  width: 400px;
+  width: 70%;
   position:relative;
+  left: 15%;
 }
+
+.sidebar img{
+  width: 25%;
+  height: 25%;
+}
+
+.sidebar .logo{
+  width: 10%;
+  height: 10%;
+}
+
+.sidebar td {
+  text-align: center;
+}
+
 .sidebar h1{
-  font-size: 2em;
-
+  font-size: em;
+  text-align: center;;
 }
-.sidebar td{
-  width: auto;
-  height: auto;
-}
-.sidebar table{
-  width: 100px;
-}
-
 body {
   background-image: url(pictures/forest.jpeg);
   background-attachment: fixed;
 }
-.main {
-  font-size: 0.9em;
 
+.sidebar .column2 {
+  float: left;
+  width: 25%;
+}
+
+.sidebar .row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main {
+  position: relative;
 }
 }
+
 
 @media (max-width: 578px) {
   .main{
