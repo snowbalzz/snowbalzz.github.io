@@ -67,7 +67,7 @@ body {
     font-size: 1em;
 }
 .main img {
-    height: 500px;
+    height: 400px;
     width: 300px;
   
 }
@@ -129,26 +129,6 @@ body {
 .study h1{
   text-shadow: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * {
   box-sizing: border-box;
@@ -293,7 +273,6 @@ body {
 }
 }
 
-
 @media (max-width:400px) {
   .sidebar h1{
     font-size: 1.5em;
@@ -304,6 +283,7 @@ body {
     margin-left: 5%;
     font-size: 0.5em;
   }
+
   .sidebar img{
     width: 20%;
     height: 20%;
@@ -312,7 +292,12 @@ body {
    width: 90%;
    left: 5%;
   }
-  
+
+.main img {
+  height: 300px;
+  width: 200px;
+
+}
 }
 
 @media (max-width:380px) {
@@ -333,6 +318,9 @@ body {
    width: 90%;
    left: 5%;
   }
+  .main img {
+    height: 200px;
+    width: 100px;
 }
 
 .progress {
@@ -345,13 +333,13 @@ body {
 
 #myProgress {
   width: 100%;
-  background-color: #ddd;
+  background-color:teal;
 }
 #myBar {
   width: 0%;
   height: 30px;
-  background-color: #4CAF50;
+  background-color:#F8C275;
   text-align: center;
   line-height: 30px;
-  color: white;
+  color: #d64674;
 }
