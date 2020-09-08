@@ -3,175 +3,172 @@
     <head>
         <link rel="stylesheet"  type="text/css" href="test_c.css">
     </head>
-<title>
-</title>
-<body>
-     <div class="sidebar">
-        <header>
-            <img class="logo" src="pictures/logo.png" alt="">
-            <hr>
-            <div class="row2">
-            <div class="column2"><a href ="index.html" style="text-decoration: none;" ><h1>HOME </h1></a></div>
-            <div class="column2"><a href = "profile.html" style="text-decoration: none;" ><h1>PROFILE</h1></a></div>
-            <div class="column2"><a href = "dashboard.html" style="text-decoration: none;" ><h1>DASHBOARD</h1></a></div>
-            <div class="column2"><a href = "faq.html" style="text-decoration: none;" ><h1>FAQ</h1></a></div>
-            </div>
-            <hr>
-            <table align="center">
-                <td><img src="pictures/INSTA.png" alt=""></td>
-                <td><img src="pictures/INSTA.png" alt=""></td>
-            </table>
-        </header>
-    </div>   
-        <div class="main">
-            <div class="text">
-            <h1>DASHBOARD</h1>
-
-            <div class="study">
-                <div class="links">
-                        <h1>Studyguide</h1>
-                        <a href="https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf" target="_blank" style="text-decoration: none;" ><h2>The HZ Course and Examination Regulations </h2></a>
-                        <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf" target="_blank" style="text-decoration: none;" ><h2>The Implementation Regulations (IR) of the HBO-ICT programme</h2></a>
-                        <a href="https://learn.hz.nl/my/" target="_blank" style="text-decoration: none;" ><h2>HZ Learn</h2></a>
-                        <a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank" style="text-decoration: none;" ><h2>HZ MS Teams</h2></a>
-                        <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank" style="text-decoration: none;" ><h2>My HZ studyprogress</h2></a>
-                        <a href="https://github.com/HZ-HBO-ICT" target="_blank" style="text-decoration: none;" ><h2>HZ HBO-ICT GitHub</h2></a>
-                </div> 
-            <hr>
-            <h1>Study Monitor</h1>
-            <div id="myProgress">
-                <div id="myBar">0%</div>
-            </div>
-            <button type="button" onclick="change_progress()">Change Progress</button>
-            <hr>
-                <table>
-                    <tr>
-                        <td><h1>Quartile</h1></td>
-                        <td><h1>Course</h1></td>
-                        <td><h1>EC</h1></td>
-                        <td><h1>Exam</h1></td>
-                        <td><h1>Grade</h1></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3"><p>1</p></td>
-                        <td><p>Programme and Career Orientation</p></td>
-                        <td><p>2,5</p></td>
-                        <td><p>Assessment</p></td>
-                        <td><p><input type="text" class="form-control" id="number1" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Computer Science Basics</p></td>
-                        <td><p>7,5</p></td>
-                        <td><p>Written</p></td>
-                        <td><p><input type="text" class="form-control" id="number2" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Programming Basics</p></td>
-                        <td><p>5</p></td>
-                        <td><p>Case study</p></td>
-                        <td><p><input type="text" class="form-control" id="number3" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3"><p>2</p></td>
-                        <td rowspan="2"><p>Object Oriented Programming</p></td>
-                        <td rowspan="2"><p>10</p></td>
-                        <td><p>Case study</p></td>
-                        <td><p><input type="text" class="form-control" id="number4" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Project</p></td>
-                        <td><p><input type="text" class="form-control" id="number5" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Professional Skills 1</p></td>
-                        <td><p>2,5</p></td>
-                        <td><p>Portfolio</p></td>
-                        <td><p><input type="text" class="form-control" id="number6" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="7"><p>3</p></td>
-                        <td rowspan="2"><p>Professional Skills 3</p></td>
-                        <td rowspan="2"><p>2</p></td>
-                        <td><p>Portfolio exam</p></td>
-                        <td><p><input type="text" class="form-control" id="number7" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Portfolio exam </p></td>
-                        <td><p><input type="text" class="form-control" id="number8" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Professional Working Environment</p></td>
-                        <td><p>2,5</p></td>
-                        <td><p>Assessment</p></td>
-                        <td><p><input type="text" class="form-control" id="number9" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Framework Development 1</p></td>
-                        <td><p>5</p></td>
-                        <td><p>Case study</p></td>
-                        <td><p><input type="text" class="form-control" id="number10" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3"><p>Professional Skills 2</p></td>
-                        <td rowspan="3"><p>2,5</p></td>
-                        <td><p>Portfolio exam</p></td>
-                        <td><p><input type="text" class="form-control" id="number11" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Written exam </p></td>
-                        <td><p><input type="text" class="form-control" id="number12" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Written exam </p></td>
-                        <td><p><input type="text" class="form-control" id="number13" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="5"><p>4</p></td>
-                        <td rowspan="3"><p>Proffesional Skills 3</p></td>
-                        <td rowspan="3"><p>2,5</p></td>
-                        <td><p>Portfolio exam</p></td>
-                        <td><p><input type="text" class="form-control" id="number14" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Written exam </p></td>
-                        <td><p><input type="text" class="form-control" id="number15" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Written exam </p></td>
-                        <td><p><input type="text" class="form-control" id="number16" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Framework Project 2</p></td>
-                        <td><p>5</p></td>
-                        <td><p>Portfolio exam</p></td>
-                        <td><p><input type="text" class="form-control" id="number17" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>Framework Development 2 2</p></td>
-                        <td><p>5</p></td>
-                        <td><p>Portfolio exam</p></td>
-                        <td><p><input type="text" class="form-control" id="number18" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><p>'Whenever'</p></td>
-                        <td><p>HZ Personality</p></td>
-                        <td><p>2,5</p></td>
-                        <td><p>Porfolio</p></td>
-                        <td><p><input type="text" class="form-control" id="number19" min="0" max="60" required></p></td>
-                    </tr>
-                    <tr>
-                        <td><p>IT Personality</p></td>
-                        <td><p>2,5</p></td>
-                        <td><p>Porfolio</p></td>
-                        <td><p><input type="text" class="form-control" id="number20" min="0" max="60" required></p></td>
-                    </tr>
-                </table>
-            </div>
-
-            <hr>
-            </div>
-        </div>
-    </body>
+        <body>
+            <div class="sidebar">
+                <header>
+                    <img class="logo" src="pictures/logo.png" alt="">
+                        <hr>
+                            <div class="row2">
+                                <div class="column2"><a href ="index.html" style="text-decoration: none;" ><h1>HOME </h1></a></div>
+                                <div class="column2"><a href = "profile.html" style="text-decoration: none;" ><h1>PROFILE</h1></a></div>
+                                <div class="column2"><a href = "dashboard.html" style="text-decoration: none;" ><h1>DASHBOARD</h1></a></div>
+                                <div class="column2"><a href = "faq.html" style="text-decoration: none;" ><h1>FAQ</h1></a></div>
+                            </div>
+                        <hr>
+                    <table align="center">
+                        <td><img src="pictures/INSTA.png" alt=""></td>
+                        <td><img src="pictures/INSTA.png" alt=""></td>
+                    </table>
+                </header>
+            </div>   
+            <div class="main">
+                <div class="text">
+                    <h1>DASHBOARD</h1>
+                        <hr>
+                            <div class="study">
+                                <div class="links">
+                                        <h1>Studyguide</h1>
+                                        <a href="https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf" target="_blank" style="text-decoration: none;" ><h2>The HZ Course and Examination Regulations </h2></a>
+                                        <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf" target="_blank" style="text-decoration: none;" ><h2>The Implementation Regulations (IR) of the HBO-ICT programme</h2></a>
+                                        <a href="https://learn.hz.nl/my/" target="_blank" style="text-decoration: none;" ><h2>HZ Learn</h2></a>
+                                        <a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank" style="text-decoration: none;" ><h2>HZ MS Teams</h2></a>
+                                        <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank" style="text-decoration: none;" ><h2>My HZ studyprogress</h2></a>
+                                        <a href="https://github.com/HZ-HBO-ICT" target="_blank" style="text-decoration: none;" ><h2>HZ HBO-ICT GitHub</h2></a>
+                                </div> 
+                                    <hr>
+                                        <h1>Study Monitor</h1>
+                                    <div id="myProgress">
+                                <div id="myBar">0%</div>
+                                </div>
+                                    <button type="button" onclick="change_progress()">Change Progress</button>
+                                    <hr>
+                                        <table>
+                                            <tr>
+                                                <td><h1>Quartile</h1></td>
+                                                <td><h1>Course</h1></td>
+                                                <td><h1>EC</h1></td>
+                                                <td><h1>Exam</h1></td>
+                                                <td><h1>Grade</h1></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3"><p>1</p></td>
+                                                <td><p>Programme and Career Orientation</p></td>
+                                                <td><p>2,5</p></td>
+                                                <td><p>Assessment</p></td>
+                                                <td><p><input type="text" class="form-control" id="number1" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Computer Science Basics</p></td>
+                                                <td><p>7,5</p></td>
+                                                <td><p>Written</p></td>
+                                                <td><p><input type="text" class="form-control" id="number2" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Programming Basics</p></td>
+                                                <td><p>5</p></td>
+                                                <td><p>Case study</p></td>
+                                                <td><p><input type="text" class="form-control" id="number3" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3"><p>2</p></td>
+                                                <td rowspan="2"><p>Object Oriented Programming</p></td>
+                                                <td rowspan="2"><p>10</p></td>
+                                                <td><p>Case study</p></td>
+                                                <td><p><input type="text" class="form-control" id="number4" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Project</p></td>
+                                                <td><p><input type="text" class="form-control" id="number5" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Professional Skills 1</p></td>
+                                                <td><p>2,5</p></td>
+                                                <td><p>Portfolio</p></td>
+                                                <td><p><input type="text" class="form-control" id="number6" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="7"><p>3</p></td>
+                                                <td rowspan="2"><p>Professional Skills 3</p></td>
+                                                <td rowspan="2"><p>2</p></td>
+                                                <td><p>Portfolio exam</p></td>
+                                                <td><p><input type="text" class="form-control" id="number7" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Portfolio exam </p></td>
+                                                <td><p><input type="text" class="form-control" id="number8" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Professional Working Environment</p></td>
+                                                <td><p>2,5</p></td>
+                                                <td><p>Assessment</p></td>
+                                                <td><p><input type="text" class="form-control" id="number9" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Framework Development 1</p></td>
+                                                <td><p>5</p></td>
+                                                <td><p>Case study</p></td>
+                                                <td><p><input type="text" class="form-control" id="number10" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3"><p>Professional Skills 2</p></td>
+                                                <td rowspan="3"><p>2,5</p></td>
+                                                <td><p>Portfolio exam</p></td>
+                                                <td><p><input type="text" class="form-control" id="number11" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Written exam </p></td>
+                                                <td><p><input type="text" class="form-control" id="number12" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Written exam </p></td>
+                                                <td><p><input type="text" class="form-control" id="number13" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="5"><p>4</p></td>
+                                                <td rowspan="3"><p>Proffesional Skills 3</p></td>
+                                                <td rowspan="3"><p>2,5</p></td>
+                                                <td><p>Portfolio exam</p></td>
+                                                <td><p><input type="text" class="form-control" id="number14" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Written exam </p></td>
+                                                <td><p><input type="text" class="form-control" id="number15" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Written exam </p></td>
+                                                <td><p><input type="text" class="form-control" id="number16" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Framework Project 2</p></td>
+                                                <td><p>5</p></td>
+                                                <td><p>Portfolio exam</p></td>
+                                                <td><p><input type="text" class="form-control" id="number17" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Framework Development 2 2</p></td>
+                                                <td><p>5</p></td>
+                                                <td><p>Portfolio exam</p></td>
+                                                <td><p><input type="text" class="form-control" id="number18" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2"><p>'Whenever'</p></td>
+                                                <td><p>HZ Personality</p></td>
+                                                <td><p>2,5</p></td>
+                                                <td><p>Porfolio</p></td>
+                                                <td><p><input type="text" class="form-control" id="number19" min="0" max="60" required></p></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>IT Personality</p></td>
+                                                <td><p>2,5</p></td>
+                                                <td><p>Porfolio</p></td>
+                                                <td><p><input type="text" class="form-control" id="number20" min="0" max="60" required></p></td>
+                                            </tr>
+                                        </table>
+                            </div>
+                         <hr>
+                    </div>
+                </div>
+        </body>
 </html> 
 
 <script>
