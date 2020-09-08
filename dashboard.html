@@ -30,6 +30,12 @@
             <div class="study">
                 <hr>
             <h1>Study Monitor</h1>
+            <br>
+            <div id="myProgress">
+                <div id="myBar">0%</div>
+            </div>
+            <hr>
+            <button type="button" onclick="change_progress()">Change Progress</button>
                 <table>
                     <tr>
                         <td><h1>Quartile</h1></td>
@@ -43,113 +49,113 @@
                         <td><p>Programme and Career Orientation</p></td>
                         <td><p>2,5</p></td>
                         <td><p>Assessment</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number1" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Computer Science Basics</p></td>
                         <td><p>7,5</p></td>
                         <td><p>Written</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number2" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Programming Basics</p></td>
                         <td><p>5</p></td>
                         <td><p>Case study</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number3" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td rowspan="3"><p>2</p></td>
                         <td rowspan="2"><p>Object Oriented Programming</p></td>
                         <td rowspan="2"><p>10</p></td>
                         <td><p>Case study</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number4" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Project</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number5" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Professional Skills 1</p></td>
                         <td><p>2,5</p></td>
                         <td><p>Portfolio</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number6" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td rowspan="7"><p>3</p></td>
                         <td rowspan="2"><p>Professional Skills 3</p></td>
                         <td rowspan="2"><p>2</p></td>
                         <td><p>Portfolio exam</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number7" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Portfolio exam </p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number8" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Professional Working Environment</p></td>
                         <td><p>2,5</p></td>
                         <td><p>Assessment</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number9" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Framework Development 1</p></td>
                         <td><p>5</p></td>
                         <td><p>Case study</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number10" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td rowspan="3"><p>Professional Skills 2</p></td>
                         <td rowspan="3"><p>2,5</p></td>
                         <td><p>Portfolio exam</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number11" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Written exam </p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number12" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Written exam </p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number13" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td rowspan="5"><p>4</p></td>
                         <td rowspan="3"><p>Proffesional Skills 3</p></td>
                         <td rowspan="3"><p>2,5</p></td>
                         <td><p>Portfolio exam</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number14" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Written exam </p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number15" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Written exam </p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number16" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Framework Project 2</p></td>
                         <td><p>5</p></td>
                         <td><p>Portfolio exam</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number17" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>Framework Development 2 2</p></td>
                         <td><p>5</p></td>
                         <td><p>Portfolio exam</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number18" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td rowspan="2"><p>'Whenever'</p></td>
                         <td><p>HZ Personality</p></td>
                         <td><p>2,5</p></td>
                         <td><p>Porfolio</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number19" min="0" max="60" required></p></td>
                     </tr>
                     <tr>
                         <td><p>IT Personality</p></td>
                         <td><p>2,5</p></td>
                         <td><p>Porfolio</p></td>
-                        <td><p>N/A</p></td>
+                        <td><p><input type="text" class="form-control" id="number20" min="0" max="60" required></p></td>
                     </tr>
                 </table>
             </div>
@@ -168,3 +174,25 @@
         </div>
     </body>
 </html> 
+
+<script>
+    function change_progress() {
+        var elem = document.getElementById("myBar");
+        var val = parseInt(document.getElementById("number1").value) + parseInt(document.getElementById("number2").value) +parseInt(document.getElementById("number3").value) +parseInt(document.getElementById("number4").value) +parseInt(document.getElementById("number5").value) 
+        +parseInt(document.getElementById("number6").value) +parseInt(document.getElementById("number7").value) +parseInt(document.getElementById("number8").value) +parseInt(document.getElementById("number9").value) +parseInt(document.getElementById("number10").value) 
+        +parseInt(document.getElementById("number11").value) +parseInt(document.getElementById("number12").value) +parseInt(document.getElementById("number13").value)
+        +parseInt(document.getElementById("number14").value) +parseInt(document.getElementById("number15").value) +parseInt(document.getElementById("number16").value) +parseInt(document.getElementById("number17").value) 
+        +parseInt(document.getElementById("number18").value) +parseInt(document.getElementById("number19").value)  +parseInt(document.getElementById("number20").value);
+        var width = 0;
+        var id = setInterval(frame, val);
+        function frame() {
+            if (width >= val) {
+                clearInterval(id);
+            } else {
+                width++; 
+                elem.style.width = width + '%'; 
+                elem.innerHTML = width * 1  + '%';
+            }
+        }  
+    }
+</script>

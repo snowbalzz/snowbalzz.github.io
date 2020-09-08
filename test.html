@@ -18,5 +18,48 @@
 <div class ="main" id="main">
         <h1>hello</h1>
 </div>
+<div class="form-group">
+    <label for="number">Введите число!</label>
+    <input type="text" class="form-control" id="number" min="0" max="100" required>
+  </div>
+   <button id="btn" type="button" class="btn btn-primary">Применить</button>
+   <div class="progress-wrap">
+     <div class="progress-message">Ваша форма заполнена на <span class="output">___</span> %</div>  
+    <progress max="100" value="0" class="progress"></progress>
+    </div>
+    <script>
+        $(document).ready(function(){ 
+  $('#btn').click(function(){ 
+    var val = $('#number').val();
+    est(val);
+  });
+});
+
+function est(value) {
+    var progress = $(".progress"), 
+        progressMessage = $(".progress-message");  
+  
+  if (value == 0) {
+      progress.attr("value", "0");
+      progressMessage.text("Complete the form.");
+  }
+  if (value == 1) {
+      progress.attr("value", "33");
+      progressMessage.text("There you go, great start!");
+      progress.addClass('light-green');
+  }
+  if (value == 2) {
+      progress.attr("value", "66");
+      progressMessage.text("Nothing can stop you now.");
+      progress.addClass('green');
+  }
+  if (value == 3) {
+      progress.attr("value", "100");
+      progressMessage.text("Completed!");
+      progress.addClass('dark-green');
+  }
+}
+
+    </script>
 </body>
 </html>

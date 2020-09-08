@@ -248,12 +248,6 @@ body {
 
 }
 
-
-
-
-
-
-
 @media (max-width: 1400px) {
 .sidebar{
   width: 70%;
@@ -339,4 +333,25 @@ body {
    width: 90%;
    left: 5%;
   }
+}
+
+.progress {
+  width: 20%;
+  height: 20px;
+  margin: 0 0 5px 0;
+  background: #fff;
+
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
 }
