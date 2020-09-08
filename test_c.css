@@ -2,7 +2,10 @@ img{
     max-width: 100%;
     height:auto;
 }
+.sidebar header{
+  text-align: center;
 
+}
 .sidebar{
     position: fixed;
     top: 0;
@@ -72,6 +75,13 @@ body {
   margin-top: 0;
 }
 
+.main hr{
+  width: 100%;
+  height: 2px;
+  border-color: #F36F98;
+  background-color: #F36F98;
+}
+
 .main a:hover {
   color:#F8C275;
 }
@@ -94,6 +104,50 @@ body {
     margin-left: 5%;
     margin-right: 5%;
 }
+
+
+.study td {
+  width: 16.6%;
+  text-align: center;
+  border: 1px solid teal;
+  padding: 0;
+  margin: 0;
+  background-color: #d64674;
+}
+
+.study table{
+  text-align: center;
+  border: 5px solid teal;
+  padding: 0;
+  background-color:teal;
+}
+
+.study p{
+  color:#F8C275;
+  text-align: center;
+}
+.study h1{
+  text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 * {
@@ -246,8 +300,43 @@ body {
 }
 
 
-@media (max-width: 578px) {
-  .main{
-  font-size: 0.1em;
+@media (max-width:400px) {
+  .sidebar h1{
+    font-size: 1.5em;
+    text-align: center;;
+  }
+  .main {
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 0.5em;
+  }
+  .sidebar img{
+    width: 20%;
+    height: 20%;
+  }
+  .sidebar {
+   width: 90%;
+   left: 5%;
+  }
+  
+}
+
+@media (max-width:380px) {
+  .sidebar h1{
+    font-size:1em;
+    text-align: center;;
+  }
+  .main {
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 0.9em;
+  }
+  .sidebar img{
+    width: 20%;
+    height: 20%;
+  }
+  .sidebar {
+   width: 90%;
+   left: 5%;
   }
 }
