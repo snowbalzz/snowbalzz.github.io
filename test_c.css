@@ -106,7 +106,6 @@ color:#F8C275;
 }
 
 .main .text .indext img{
-  height: 100%;
   width: 100%;
 }
 
@@ -122,6 +121,7 @@ color:#F8C275;
 
 .main .text .indext tfoot{
   margin-left: 100%;
+
 }
 
 .main .text .indext strong{
