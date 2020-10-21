@@ -107,6 +107,7 @@ color:#F8C275;
 
 .main .text .indext img{
   width: 100%;
+  height: auto;
 }
 
 .main .text .indext td{
@@ -126,6 +127,10 @@ color:#F8C275;
 
 .main .text .indext strong{
   background-color: #F8C275;
+}
+
+.main .text .indext h2{
+  color:  #d64674;
 }
 
 .study td {
