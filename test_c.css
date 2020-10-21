@@ -106,11 +106,27 @@ color:#F8C275;
 }
 
 .main .text .indext img{
+  height: 100%;
   width: 100%;
 }
+
 .main .text .indext td{
   width: auto;
   padding: 1%;
+}
+
+.main .text .indext iframe{
+  width: 100%;
+  padding: 1%;
+}
+
+.main .text .indext tfoot{
+  margin-left: 100%;
+  text-align: center;
+}
+
+.main .text .indext strong{
+  background-color: #F8C275;
 }
 
 .study td {
@@ -240,9 +256,6 @@ opacity: 1;
   height: auto;
 
 }
-
-
-
 
 
 
