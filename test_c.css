@@ -76,7 +76,7 @@ body {
   margin-right: 15%;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: rgba(61, 253, 253, 0.8);
+  background-color: rgba(61, 253, 253, 0.85);
   color:#27273A;
   font-size: 1.2em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -139,8 +139,8 @@ color:#F8C275;
 }
 
 .text{
-  margin-left: 1%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   align-content: center;
 }
 
@@ -304,6 +304,7 @@ opacity: 1;
 
 
 @media (max-width: 1400px) {
+
 .sidebar{
 width: 70%;
 position:relative;
@@ -447,12 +448,11 @@ color: #d64674;
   background-image: url("pictures/me_profile.png");
 
   min-height: 400px; 
-
+  background-size: 1000px;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-position-y: 0%;
-  background-position-x: center;
+  background-position-x:center;
 }
 
 .parallax2 {
@@ -519,15 +519,7 @@ color: #d64674;
   color: #d64674;
 }
 
+.conclusion {
+  text-align: center;
 
-#zoom {
-  padding: 50px;
-  transition: transform .2s; /* Animation */
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-#zoom:hover {
-  transform: scale(1.5); 
 }
