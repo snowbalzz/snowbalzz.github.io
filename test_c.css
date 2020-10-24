@@ -349,12 +349,8 @@ clear: both;
 position: relative;
 left:-0.06%;
 }
+
 }
-
-
-
-
-
 
 
 @media (max-width:400px) {
@@ -521,5 +517,14 @@ color: #d64674;
 
 .conclusion {
   text-align: center;
+
+}
+.company_item {
+  text-align: center;
+
+}
+.company_item img {
+  width: auto;
+  height: auto;
 
 }
